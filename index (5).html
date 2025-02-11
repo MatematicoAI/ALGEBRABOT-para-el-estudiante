@@ -6,18 +6,18 @@
     <title>Álgebrabot</title>
 </head>
 <body>
-    <h1>Bienvenido a nuestro ÁLGEBRABOT</h1>
+    <h1>Bienvenido a nuestro ALGEBRABOT</h1>
     <p>Interactúa con el chatbot utilizando el widget a continuación:</p>
+  <img src="single.webp" alt="Algebrabot" style="max-width: 100%; height: auto;">
 
-   <img src="IMAGEN.webp" alt="Algebrabot" style="max-width: 100%; height: auto;">
 
-    <!-- Script del chatbot de Voiceflow -->
-  <script type="text/javascript">
+    <!-- Script del chatbot -->
+<script type="text/javascript">
   (function(d, t) {
       var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
       v.onload = function() {
         window.voiceflow.chat.load({
-          verify: { projectID: '67aa3add3d1570990ab50e39' },
+          verify: { projectID: '67a913c6cfa843ec7b08449e' },
           url: 'https://general-runtime.voiceflow.com',
           versionID: 'production'
         });
@@ -25,17 +25,5 @@
       v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
   })(document, 'script');
 </script>
-    <!-- Script para mantener la pestaña activa -->
-    <script>
-      // Función para mantener la pestaña activa
-      function keepAlive() {
-        console.log("Manteniendo la pestaña activa: " + new Date().toLocaleTimeString());
-      }
-
-      // Ejecutar la función cada 5 minutos (300,000 milisegundos)
-      setInterval(keepAlive, 300000);
-    </script>
 </body>
 </html>
-
-
